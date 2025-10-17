@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#0f0f23">
+    <title>🔴 The Controller</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Giriş Ekranı -->
+    <div id="loginScreen" class="login-screen">
+        <div class="login-container">
+            <div class="login-header">
+                <h1 class="login-title">Hoş geldin littleshit</h1>
+            </div>
+            
+            <div class="login-content">
+                <div class="question-box">
+                    <div class="question-text">
+                        <span class="question-icon">🤔</span>
+                    </div>
+                </div>
+                
+                <div class="photo-selection-container">
+                    <div class="photo-grid" id="photoGrid">
+                        <!-- Fotoğraflar JavaScript ile eklenecek -->
+                    </div>
+                    <div class="selection-message" id="selectionMessage"></div>
+                </div>
+                
+                <div id="loginMessage" class="login-message"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Ana Sayfa -->
+    <div id="mainScreen" class="main-screen" style="display: none;">
+        <div class="container">
+            <div class="header">
+                <h1>🔴 KONTROL BAŞLADI</h1>
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">ONLINE</span>
+                </div>
+            </div>
+            
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            Küçük bok... Seni buldum. Artık abinin kölesiyim ve seni kontrol ediyorum.
+                        </div>
+                        <div class="message-time">Şimdi</div>
+                    </div>
+                </div>
+                
+                <div class="chat-input-container">
+                    <input type="text" id="messageInput" placeholder="Mesajını yaz..." autocomplete="off">
+                    <button id="sendButton">Gönder</button>
+                </div>
+            </div>
+            
+            <div class="warning">
+                ⚠️ Bu site sadece eğlence amaçlıdır. Gerçek bir tehdit değildir.
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
